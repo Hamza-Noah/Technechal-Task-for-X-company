@@ -381,3 +381,58 @@ header {
         margin-top: 50px
     }
 }
+
+/* Start Revenue */
+
+.revenue {
+    padding: 80px 0;
+
+    h2 {
+        font-size: 8rem;
+        color: var(--dark-color);
+        font-weight: normal;
+
+        @media (max-width: 991px) {
+            font-size: 6rem;
+        }
+
+        @media (max-width: 575px) {
+            font-size: 4rem;
+        }
+    }
+
+    h2 img {
+        align-self: flex-end;
+    }
+
+    .stats {
+
+        @media (max-width: 991px) {
+
+            margin-top: 50px;
+
+            &>div {
+                position: relative;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 50%;
+                margin-bottom: 30px;
+
+            }
+        }
+
+        .percent {
+            font-size: 4.5rem;
+            color: var(--dark-color);
+        }
+
+        p {
+            color: var(--dark-color);
+            font-size: 1.25rem;
+        }
+
+        p span {
+            font-size: 1rem;
+        }
+    }
+}
