@@ -406,6 +406,10 @@ header {
     }
 
     .stats {
+        &>div {
+            border-bottom: 2px solid #dddddd;
+        }
+
 
         @media (max-width: 991px) {
 
