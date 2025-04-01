@@ -1,0 +1,383 @@
+:root {
+    --dark-color: #000000;
+    --white-color: #ffffff;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Figtree", sans-serif;
+}
+
+@media (min-width: 992px) {
+    .container-fluid {
+        padding-left: 50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container-fluid {
+        padding-left: 60px;
+    }
+}
+
+nav {
+    background-color: var(--dark-color);
+    padding-top: 50px !important;
+    border-bottom: #191919 solid 2px;
+}
+
+nav ul li a {
+    color: var(--white-color) !important;
+    font-size: 1.125rem !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+
+}
+
+@media (min-width: 992px) {
+
+    .sections-links {
+        left: 50%;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+
+
+}
+
+.demo {
+    background-color: #5b6cff;
+    border-radius: 25px;
+
+    &:hover {
+        background-color: #5b6cff;
+    }
+}
+
+/* Start Header */
+
+header {
+    background-color: var(--dark-color);
+    padding: 20px 0 40px;
+    color: var(--white-color);
+
+    h1 {
+        font-size: 6rem;
+        font-weight: normal;
+    }
+
+    p {
+        color: #b2b2b2;
+        font-size: 1.5rem;
+        width: 50%;
+        margin: 30px auto;
+    }
+
+    .links {
+        display: flex;
+        justify-content: center;
+        column-gap: 15px;
+        margin-bottom: 150px;
+
+        a {
+            padding: 10px 20px;
+        }
+
+        a:last-child {
+            border: #333333 solid 1px;
+            border-radius: 25px;
+            padding: 10px 15px;
+
+
+        }
+    }
+
+    .header-bg {
+        background-image: url("../images/header-bg.png");
+        background-size: 120%;
+        background-repeat: no-repeat;
+        background-position: -100px;
+        position: relative;
+
+        @media (min-width: 992px) {
+            height: 100vh;
+
+        }
+    }
+
+    .displayed-image {
+        border-radius: 10px;
+        width: 74%;
+        position: absolute;
+        top: 20px;
+        left: 13%;
+
+        @media (max-width: 991px) {
+            top: -40px
+        }
+
+    }
+
+}
+
+
+/* Start Teams */
+
+.teams {
+
+    background-color: var(--dark-color);
+    padding: 50px 0 0;
+
+    .info {
+        padding: 60px 0 0;
+    }
+
+    h2 {
+        font-size: 2.85rem;
+        font-weight: normal;
+        color: var(--white-color) !important;
+        margin-bottom: 20px;
+    }
+
+    h2+p {
+        font-size: 1.125rem;
+        color: #a6a6a6;
+        margin-bottom: 50px;
+
+    }
+
+    .rate {
+
+        img {
+            vertical-align: top;
+        }
+
+        span {
+            font-size: 1.75rem;
+        }
+
+        span:first-of-type {
+            color: var(--white-color);
+
+        }
+
+        span:last-of-type {
+            color: #808080;
+        }
+    }
+
+    .rate+p {
+        color: #a6a6a6;
+        font-size: .8rem;
+    }
+}
+
+/* Start Experince */
+
+.experience {
+    padding: 100px 0;
+    color: #000000;
+    padding-right: 5px;
+
+    @media (min-width: 992px) {
+        padding-left: 50px;
+        padding-right: 10px;
+    }
+
+
+    @media (min-width: 1024px) {
+        .container-fluid {
+            padding-left: 60px;
+            padding-right: 10px;
+        }
+    }
+
+
+    &>p {
+        font-size: 3.5rem;
+        font-weight: normal;
+        margin-bottom: 0;
+
+        @media (max-width: 767px) {
+            font-size: 2rem;
+
+        }
+
+    }
+
+    &>h2 {
+        font-size: 15rem;
+        line-height: .7;
+        transform: translateX(-22px);
+
+        @media (max-width: 767px) {
+
+            font-size: 5rem;
+            transform: translateX(-5px);
+
+        }
+    }
+
+    .images {
+        margin-top: 100px;
+        gap: 25px;
+    }
+
+    .images .img {
+
+        position: relative;
+
+        .info {
+            position: absolute;
+            top: 50px;
+            left: 50px;
+
+            @media (max-width: 767px) {
+
+                top: 20px;
+                left: 20px;
+            }
+
+        }
+    }
+
+    .images .img:first-child {
+        width: 100%;
+
+        h3 {
+            color: var(--dark-color);
+            font-size: 1.5rem;
+        }
+
+        .info p {
+            color: #3e4746;
+            width: 360px;
+            font-weight: normal;
+        }
+    }
+
+    .images .img:nth-child(2) {
+        width: calc(58% - 12.5px)
+    }
+
+    .images .img:nth-child(3) {
+        width: calc(42% - 12.5px)
+    }
+
+    .images .img:nth-child(4) {
+        width: calc(50% - 12.5px)
+    }
+
+    .images .img:nth-child(5) {
+        width: calc(50% - 12.5px)
+    }
+
+    @media (max-width: 991px) {
+        .img {
+
+            width: 100% !important
+        }
+    }
+
+    a {
+        font-size: 1.125rem;
+        color: var(--dark-color);
+        border: solid 1.5px #e6e6e6;
+        border-radius: 25px;
+        padding: 10px 20px;
+        text-decoration: none;
+    }
+
+}
+
+/* Start Platform */
+
+.platform {
+    background-color: var(--dark-color);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../images/platform.jpeg");
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    border-bottom: solid 1px #191919;
+
+    h2 {
+        font-size: 3.7rem;
+        font-weight: normal;
+        color: var(--white-color);
+
+        @media (max-width: 767px) {
+            font-size: 2.2rem;
+        }
+    }
+
+    h2+p {
+        color: #a6a6a6
+    }
+
+    a {
+        font-size: 1.125rem;
+        color: var(--white-color);
+        border: solid 1px #333333;
+        border-radius: 25px;
+        padding: 10px 20px;
+        text-decoration: none;
+
+    }
+}
+
+/* Start Powered */
+
+.powered {
+
+
+    color: var(--white-color);
+
+
+    padding: 100px 0;
+    background-color: #000000;
+    padding-right: 5px;
+
+    p {
+        font-size: 3.5rem;
+        font-weight: normal;
+        margin-bottom: 0;
+
+        @media (max-width: 767px) {
+            font-size: 2rem;
+        }
+    }
+
+    h2 {
+        font-size: 15rem;
+        line-height: .9;
+        font-weight: normal;
+
+        @media (max-width: 767px) {
+            font-size: 5rem;
+        }
+    }
+
+
+
+    a {
+        font-size: 1.125rem;
+        color: var(--white-color);
+        border: solid 1px #333333;
+        border-radius: 25px;
+        padding: 10px 20px;
+        text-decoration: none;
+        display: block;
+        margin: auto;
+        width: fit-content;
+        margin-top: 50px
+    }
+}
