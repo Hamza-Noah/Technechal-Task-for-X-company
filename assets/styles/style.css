@@ -673,5 +673,9 @@ header {
         color: var(--gray-text);
         border-top: solid 1px #191919;
         font-weight: normal;
+
+        @media (max-width: 991px) {
+            width: 100%;
+        }
     }
 }
