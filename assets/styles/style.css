@@ -513,3 +513,25 @@ header {
         }
     }
 }
+
+/* Start Data */
+
+.data {
+    background-color: #f5f5f5;
+
+    .info {
+        padding: 100px 0 100px 50px;
+
+        h2 {
+            font-size: 7rem;
+        }
+
+        p {
+            font-size: 1.3rem;
+
+            @media (min-width: 992px) {
+                width: 60%;
+            }
+        }
+    }
+}
