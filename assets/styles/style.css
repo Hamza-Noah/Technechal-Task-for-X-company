@@ -1,7 +1,7 @@
 :root {
     --dark-color: #000000;
     --white-color: #ffffff;
-
+    --blue-color: #5b6cff
 }
 
 * {
@@ -52,11 +52,11 @@ nav ul li a {
 }
 
 .demo {
-    background-color: #5b6cff;
+    background-color: var(--blue-color);
     border-radius: 25px;
 
     &:hover {
-        background-color: #5b6cff;
+        background-color: var(--blue-color) !important;
     }
 }
 
@@ -68,7 +68,7 @@ header {
     color: var(--white-color);
 
     h1 {
-        font-size: 6rem;
+        font-size: 7rem;
         font-weight: normal;
     }
 
@@ -440,5 +440,58 @@ header {
         p span {
             font-size: 1rem;
         }
+    }
+}
+
+/* Start Works */
+
+.works {
+    margin-bottom: 100px;
+
+    .content {
+        padding: 150px 0 75px;
+        border-bottom: solid 2px #e5e5e5;
+
+        @media (min-width: 992px) {
+            padding-right: 60px;
+
+        }
+
+        p {
+            color: var(--dark-color);
+            font-size: 1.6rem;
+            line-height: normal;
+        }
+    }
+
+    h2 {
+        font-size: 8rem;
+        line-height: .9;
+        color: var(--dark-color);
+        white-space: nowrap;
+
+        @media (max-width: 575px) {
+            font-size: 5rem;
+        }
+
+        @media (min-width: 576px) and (max-width: 767px) {
+            font-size: 6rem;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            font-size: 6rem;
+        }
+    }
+
+
+    p+a {
+        width: fit-content;
+        border-radius: 25px;
+        padding: 12px 25px;
+        cursor: pointer;
+        text-decoration: none;
+        margin-top: 15px;
+        background-color: var(--blue-color);
+        color: var(--white-color);
     }
 }
