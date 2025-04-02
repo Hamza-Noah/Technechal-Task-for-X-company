@@ -740,4 +740,16 @@ header {
         color: var(--blue-color);
         ;
     }
+
+    .blog {
+        width: fit-content;
+        border-radius: 25px;
+        padding: 12px 25px;
+        cursor: pointer;
+        text-decoration: none;
+        background-color: var(--blue-color);
+        color: var(--white-color);
+        display: block;
+        margin: 70px auto;
+    }
 }
