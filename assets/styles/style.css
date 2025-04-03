@@ -943,3 +943,35 @@ header {
 
     }
 }
+
+/* Start Footer */
+
+footer {
+    background-color: var(--dark-color);
+    padding: 100px 0 200px;
+
+    h3 {
+        color: var(--gray-text);
+        margin-bottom: 20px;
+
+        font-size: .875rem;
+
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        li a {
+            font-size: 1.125rem;
+            text-decoration: none;
+            color: var(--white-color);
+        }
+
+
+    }
+}
