@@ -844,3 +844,40 @@ header {
 
     }
 }
+
+.signup {
+    background-image: url("../images/register.jpeg");
+    background-size: cover;
+    min-height: 70vh;
+    padding: 70px 0;
+
+    h2 {
+        color: var(--white-color);
+        font-size: 4rem;
+        margin-bottom: 80px;
+
+    }
+
+    h2+p {
+        color: var(--white-color);
+        font-size: 1.5rem;
+    }
+
+    input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        border-bottom: solid var(--white-color);
+        padding: 20px 0;
+        color: var(--white-color);
+    }
+
+    button {
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background-color: transparent;
+        border: none;
+        height: 30px;
+    }
+}
