@@ -21,6 +21,10 @@ p {
     color: var(--dark-color);
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: "Figtree", sans-serif;
 }
@@ -948,7 +952,7 @@ header {
 
 footer {
     background-color: var(--dark-color);
-    padding: 100px 0 200px;
+    padding: 100px 0 0px;
 
     h3 {
         color: var(--gray-text);
@@ -973,5 +977,21 @@ footer {
         }
 
 
+    }
+
+    .links {
+        margin-top: 200px;
+        gap: 20px;
+        border-top: solid #a6a6a6 .75px;
+        padding-top: 30px;
+
+
+
+        p,
+        a {
+            color: #a6a6a6;
+            font-size: .875rem;
+
+        }
     }
 }
