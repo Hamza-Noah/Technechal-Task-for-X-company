@@ -927,8 +927,13 @@ header {
             margin: 15px;
 
             img {
-                height: 150px;
+
                 border-radius: 75px;
+
+                @media (min-width:992px) {
+                    height: 150px;
+
+                }
             }
         }
     }
