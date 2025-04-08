@@ -264,7 +264,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 0.5rem 1rem;
+    padding: 1.5rem 1rem;
 }
 
 .navbar-expand-lg {
@@ -352,7 +352,7 @@ body {
 nav {
     background-color: var(--dark-color);
     padding-top: 50px !important;
-    border-bottom: #191919 solid 2px;
+    border-bottom: #191919 solid 1px;
 }
 
 nav ul li a {
