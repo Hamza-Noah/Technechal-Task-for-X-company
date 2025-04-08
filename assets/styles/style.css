@@ -204,6 +204,11 @@ body {
     display: none;
 }
 
+.d-lg-none {
+    display: none;
+
+}
+
 @media (min-width: 992px) {
     .d-lg-block {
         display: block;
@@ -374,7 +379,12 @@ header {
     color: var(--white-color);
 
     h1 {
-        font-size: 7rem;
+        @media (min-width: 1024px) {
+            font-size: 7rem;
+            /* margin-bottom: 30px; */
+
+        }
+
         font-weight: normal;
     }
 
@@ -390,6 +400,12 @@ header {
         justify-content: center;
         column-gap: 15px;
         margin-bottom: 30px;
+
+        @media (max-width: 1023px) {
+            margin-bottom: 100px;
+
+        }
+
 
         a {
             padding: 10px 20px;
@@ -414,7 +430,7 @@ header {
         background-position: -100px;
         position: relative;
 
-        @media (min-width: 992px) {
+        @media (min-width: 1024px) {
             height: 100vh;
         }
     }
@@ -506,16 +522,25 @@ header {
         @media (max-width: 767px) {
             font-size: 2rem;
         }
+
+        @media (max-width: 991px) {
+            padding-left: 30px;
+        }
     }
 
     &>h2 {
         font-size: 15rem;
         line-height: 0.7;
         transform: translateX(-22px);
+        font-weight: 500;
 
         @media (max-width: 767px) {
             font-size: 5rem;
             transform: translateX(-5px);
+        }
+
+        @media (max-width: 991px) {
+            padding-left: 30px;
         }
     }
 
@@ -682,6 +707,7 @@ header {
 
         @media (max-width: 991px) {
             font-size: 6rem;
+            white-space: no-wrap;
         }
 
         @media (max-width: 575px) {
@@ -690,12 +716,18 @@ header {
     }
 
     h2 img {
-        align-self: flex-end;
+        align-self: center;
+        margin-right: 20px;
+
+        @media (max-width: 991px) {
+            display: none;
+        }
     }
 
     .stats {
         &>div:not(:last-child) {
-            border-bottom: 2px solid #dddddd;
+            border-bottom: 1.5px solid #dddddd;
+            margin-bottom: 16px;
         }
 
         @media (max-width: 991px) {
@@ -711,13 +743,17 @@ header {
         }
 
         .percent {
-            font-size: 4.5rem;
+            font-size: 3.7rem;
+            font-weight: normal;
+            margin-bottom: 15px;
+            display: block;
             color: var(--dark-color);
         }
 
         p {
             color: var(--dark-color);
             font-size: 1.25rem;
+            margin-bottom: 16px;
         }
 
         p span {
@@ -750,6 +786,7 @@ header {
             line-height: 0.9;
             color: var(--dark-color);
             white-space: nowrap;
+            font-weight: 500;
 
             @media (max-width: 575px) {
                 font-size: 5rem;
@@ -783,6 +820,7 @@ header {
         margin-bottom: 40px;
         padding-bottom: 40px;
 
+
         &:not(:last-child) {
             border-bottom: 1px solid #e5e5e5;
         }
@@ -801,6 +839,7 @@ header {
 
         h3 {
             color: var(--dark-color);
+            font-weight: 500;
         }
 
         h3:first-of-type {
@@ -832,6 +871,19 @@ header {
 
         h2 {
             font-size: 7rem;
+            font-weight: 500;
+
+            @media (max-width: 991px) {
+                font-size: 4rem;
+                text-align: center;
+
+            }
+
+        }
+
+
+        h2 img {
+            vertical-align: bottom;
         }
 
         p {
@@ -866,6 +918,11 @@ header {
     button {
         padding: 0 !important;
 
+        @media (max-width: 991px) {
+
+            display: none;
+
+        }
     }
 
     button img {
@@ -874,6 +931,11 @@ header {
 
     .clients {
         margin-top: 70px;
+
+        @media (max-width: 991px) {
+            row-gap: 60px;
+
+        }
     }
 
     .client {
@@ -933,16 +995,28 @@ header {
         display: flex;
         justify-content: center;
 
+        h2 {
+            font-weight: 500;
+            font-size: 4rem;
+        }
+
         h2,
         p {
             color: var(--white-color);
         }
 
         p {
-            font-size: 2.5rem;
+            font-size: 1.5rem;
             line-height: 1;
             text-align: right;
-            margin-top: 15px;
+            margin-top: 30px;
+
+            @media (min-width: 992px) {
+                margin-top: 15px;
+                font-size: 2.5rem;
+
+
+            }
         }
 
         h2 {
@@ -1072,6 +1146,20 @@ header {
     padding: 100px 0;
     background-color: var(--dark-color);
 
+    @media (max-width: 991px) {
+        .title {
+
+            flex-wrap: wrap;
+            text-align: center;
+
+            a {
+                margin: 30px auto !important;
+            }
+        }
+    }
+
+
+
     h2 {
         font-size: 7rem;
         color: var(--white-color);
@@ -1098,6 +1186,10 @@ header {
         border-right: solid 2px var(--white-color);
         border-top-right-radius: 50px;
         gap: 30px;
+
+        @media (max-width: 991px) {
+            flex-wrap: wrap;
+        }
 
 
         &>P {
@@ -1163,8 +1255,9 @@ header {
 
     h2 {
         color: var(--white-color);
-        font-size: 4rem;
+        font-size: 3.75rem;
         margin-bottom: 80px;
+        font-weight: normal;
 
     }
 
@@ -1198,13 +1291,19 @@ header {
     padding: 100px 0;
 
     h2 {
-        font-size: 5rem;
+        font-size: 7rem;
+        font-weight: 500;
         text-align: center;
         line-height: .9;
-        margin-bottom: 20px
+
+        margin-bottom: 20px;
+
+        @media (max-width: 991px) {
+            font-size: 4rem;
+        }
     }
 
-    ;
+
 
     p {
         @media (min-width: 992px) {
@@ -1263,6 +1362,7 @@ footer {
     h3 {
         color: var(--gray-text);
         margin-bottom: 20px;
+        font-weight: normal;
 
         font-size: .875rem;
 
@@ -1298,6 +1398,14 @@ footer {
             color: #a6a6a6;
             font-size: .875rem;
 
+        }
+    }
+
+    @media (max-width: 991px) {
+        text-align: center;
+
+        h3 {
+            margin: 40px 0;
         }
     }
 }
