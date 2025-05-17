@@ -4,59 +4,43 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Welcome</title>
-<link rel="stylesheet" href="assets/styles/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="assets/styles/bootstrap.min.css"> -->
 <link rel="stylesheet" href="assets/styles/style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@300..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="assets/images/logo.png" alt="logo">/ text</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav sections-links mx-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Events</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-            </ul>
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Support</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link demo btn btn-primary" href="#">Demo</a>
-              </li>
-            </ul>
-           
-          </div>
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="row justify-content-between align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="assets/images/logo.png" alt="logo"></a>
+        <div class="navbar-collapse" id="navbar-menu">
+          <ul class="navbar-nav sections-links d-none d-lg-flex">
+            <li><a class="nav-link" href="#">Features</a></li>
+            <li><a class="nav-link" href="#">Pricing</a></li>
+            <li><a class="nav-link" href="#">Events</a></li>
+            <li><a class="nav-link" href="#">About</a></li>
+            <li><a class="nav-link" href="#">Blog</a></li>
+          </ul>
+          <ul class="navbar-nav ms-auto d-none d-lg-flex">
+            <li><a class="nav-link" href="#">Support</a></li>
+            <li><a class="nav-link" href="#">Login</a></li>
+            <li><a class="nav-link btn-demo" href="#">Demo</a></li>
+          </ul>
         </div>
-      </nav>
+      </div>
+    </div>
+  </nav>
+  
       <header class="text-center">
         <h1>Captivate & Convert</h1>
         <p>A webinar platform designed for marketers to host
             jaw-dropping experiences that drive revenue.</p>
             <div class="links">
-                <a class="nav-link demo btn btn-primary" href="#">Demo</a>
-                <a class="nav-link how-it-works btn btn-dark" href="#"><img src="./assets/svg/play button.svg" alt=""> How it works</a>
+                <a class="demo btn btn-primary" href="#">Demo</a>
+                <a class="how-it-works btn text-white" href="#"><img src="./assets/svg/play button.svg" alt=""> How it works</a>
             </div>
             <div class="header-bg">
                 <img width="100%" src="assets/images/laptop.png" alt="laptop">
@@ -66,7 +50,7 @@
       <section class="teams">
         <div class="container-fluid">
             <div class="row">
-                <div class="col col-lg-4">
+                <div class="col-12 col-lg-4">
                     <div class="info">
                         <h2>
                             World-class teams
@@ -84,9 +68,9 @@
                         </div>
                         <p>avg attendance for Welcome customers</p>
                     </div>                     </div>
-                            <div class="col"></div>
+                            <div class="col d-none d-lg-block"></div>
                             <div class="col col-lg-4">
-                                <img src="./assets/images/companies.png" alt="">
+                                <img src="./assets/images/companies.png" width="100%" alt="">
                             </div>
                 </div>
             </div>
@@ -191,7 +175,7 @@
           <div class="stats">
             <div>
               <span class="percent">+87%</span>
-              <p>engagement attendee increased
+              <p>increased attendee engagement
              <br><span>Bitwise at</span></p>
             </div>
             <div>
@@ -297,7 +281,9 @@ put your brand centerstage.
             <div class="col-lg-8">
               <div class="info">
                 <h2 class="mb-5">
-                  Integrate <br><img src="./assets/images/data.png" alt=""> your data
+                  Integrate <br><img class="d-none d-lg-block" src="./assets/images/data.png" alt=""> your data
+                  <br>
+                  <img class="d-lg-none mt-3" src="./assets/images/data.png" alt="">
                 </h2>
                 <p>Leverage your existing marketing platforms and sync
                   the data seamlessly</p>
@@ -383,7 +369,7 @@ put your brand centerstage.
             </h2>
           </div>
           <div class="products-and-services">
-            <ul class="d-flex flex-wrap list-unstyled">
+            <ul class="d-flex flex-wrap">
               <li>
                 Webinars
               </li>
@@ -437,7 +423,7 @@ put your brand centerstage.
       </section>
       <section class="join">
         <div class="container-fluid pe-2">
-          <div class="d-flex justify-content-between mb-5 pt-4">
+          <div class="title d-flex justify-content-between mb-5 pt-4">
             <h2>Join us</h2>
             <a href="#">All events</a>
           </div>
@@ -577,7 +563,5 @@ Noisy Market
         </div>
 
       </footer>
-      
-      <script src="assets/js/bootstrap.bundle.min.js"></script>
-</body>
+    </body>
 </html>
